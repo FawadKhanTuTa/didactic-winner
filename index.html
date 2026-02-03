@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Long Night</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      background: #0b0f19;
+      color: #e5e7eb;
+      font-family: "Comic Neue", "Segoe UI", system-ui, sans-serif;
+    }
+
+    header {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: radial-gradient(circle at top, #1e293b, #020617);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+
+    .comic {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .panel {
+      background: #020617;
+      border: 2px solid #334155;
+      border-radius: 12px;
+      padding: 1rem;
+      min-height: 260px;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .scene {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .art {
+      height: 150px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+      border: 1px dashed #334155;
+    }
+
+    .bubble {
+      background: #f8fafc;
+      color: #020617;
+      padding: 0.6rem 0.8rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      max-width: 85%;
+      position: relative;
+    }
+
+    .bubble::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 16px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid #f8fafc;
+    }
+
+    .thought {
+      background: #e0e7ff;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>The Long Night</h1>
+  <p>A short comic about doubt, persistence, and quiet wins</p>
+</header>
+
+<main class="comic">
+
+  <div class="panel">
+    <div class="scene">Panel 1 · Late Night</div>
+    <div class="art">[ Desk • Laptop • Coffee ]</div>
+    <div class="bubble">“Why is this still not working…?”</div>
+  </div>
+
+  <div class="panel">
+    <div class="scene">Panel 2 · The Clock</div>
+    <div class="art">[ 2:47 AM • Blinking Cursor ]</div>
+    <div class="bubble thought">Maybe I should just stop for today.</div>
+  </div>
+
+  <div class="panel">
+    <div class="scene">Panel 3 · Memory</div>
+    <div class="art">[ Empty Room • Quiet ]</div>
+    <div class="bubble thought">They said it was impossible anyway.</div>
+  </div>
+
+  <div class="panel">
+    <div class="scene">Panel 4 · Decision</div>
+    <div class="art">[ Deep Breath ]</div>
+    <div class="bubble">“…one more try.”</div>
+  </div>
+
+  <div class="panel">
+    <div class="scene">Panel 5 · Focus</div>
+    <div class="art">[ Keys Tapping Faster ]</div>
+    <div class="bubble">Okay. That part makes sense now.</div>
+  </div>
+
+  <div class="panel">
+    <div class="scene">Panel 6 · Breakthrough</div>
+    <div class="art">[ Screen Glows ]</div>
+    <div class="bubble">Wait… it worked?</div>
+  </div>
+
+  <div class="panel">
+    <div class="scene">Panel 7 · Silence</div>
+    <div class="art">[ No Celebration ]</div>
+    <div class="bubble thought">Funny. This is what winning feels like.</div>
+  </div>
+
+  <div class="panel">
+    <div class="scene">Panel 8 · Morning</div>
+    <div class="art">[ Sunlight Through Window ]</div>
+    <div class="bubble">Not loud. Just earned.</div>
+  </div>
+
+</main>
+
+<footer>
+  © A small story about not quitting.
+</footer>
+
+</body>
+</html>
